@@ -1,11 +1,4 @@
 {
   "version": 1,
-  "type": "static",
-  "alias": "savify",
-  "static": {
-    "public": "dist"
-  },
-  "files": [
-    "dist"
-  ]
+  "alias": "savify"
 }
