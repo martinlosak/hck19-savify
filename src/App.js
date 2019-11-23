@@ -1,53 +1,20 @@
 import React from 'react'
 
-import {
-    Icon,
-    Page,
-    Tab,
-    Tabbar,
-    Toolbar,
-    ToolbarButton
-} from 'react-onsenui'
-
-import Button from 'src/ui/components/Button'
-import { withAppContext } from 'src/app-context/AppContext'
-import { loggedOut } from 'src/auth/msg'
-import Actions from 'src/domain/invoice/components/Actions'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import { compose } from 'ramda'
-import Typography from 'typography'
-import Overview from 'src/domain/invoice/components/Overview'
+import {Page, Tab, Tabbar, Toolbar} from 'react-onsenui'
+import {withAppContext} from 'src/app-context/AppContext'
+import {loggedOut} from 'src/auth/msg'
+import {CSSTransition, TransitionGroup} from 'react-transition-group'
+import {compose} from 'ramda'
 import Transactions from 'src/domain/invoice/components/Transactions'
 import Statistics from 'src/domain/stats/components/Statistics'
-
-const typography = new Typography({
-    baseFontSize: '18px',
-    baseLineHeight: 1.45,
-    headerFontFamily: [
-        'Avenir Next',
-        'Helvetica Neue',
-        'Segoe UI',
-        'Helvetica',
-        'Arial',
-        'sans-serif'],
-    bodyFontFamily: ['Georgia', 'serif']
-    // See below for the full list of options.
-})
-
-// typography.injectStyles()
+import Accounts from './domain/invoice/components/Accounts'
 
 const screens = [
     {
-        key: 'invoice',
-        icon: 'ion-ios-card',
-        label: 'Reconciliation',
-        comp: Actions
-    },
-    {
         key: 'other',
-        icon: 'ion-ios-body',
-        label: 'Overview',
-        comp: Overview
+        icon: 'ion-ios-card',
+        label: 'Accounts',
+        comp: Accounts
     },
     {
         key: 'transactions',
@@ -70,7 +37,6 @@ class Tabs extends React.Component {
     }
 
     renderToolbar = ({title}) => () => {
-        const logOut = this.props.logOut
         return <Toolbar>
             <div className="center">
                 <TransitionGroup>
@@ -81,11 +47,6 @@ class Tabs extends React.Component {
                         <div>{title}</div>
                     </CSSTransition>
                 </TransitionGroup>
-            </div>
-            <div className="right">
-                {/*<ToolbarButton onClick={logOut}>*/}
-                {/*<Icon icon="ion-ios-log-out"/>*/}
-                {/*</ToolbarButton>*/}
             </div>
         </Toolbar>
     }
@@ -117,8 +78,4 @@ class Tabs extends React.Component {
     }
 }
 
-export default compose(
-    withAppContext(({pubSub}) => ({
-        logOut: () => pubSub.publish(loggedOut())
-    }))
-)(Tabs)
+export default Tabs
