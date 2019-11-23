@@ -5,6 +5,7 @@ import {CSSTransition, TransitionGroup} from 'react-transition-group'
 import Transactions from 'src/domain/invoice/components/Transactions'
 import Investments from 'src/domain/stats/components/Investments'
 import Accounts from './domain/invoice/components/Accounts'
+import Info from './domain/invoice/components/Info'
 
 const screens = [
     {
@@ -24,6 +25,12 @@ const screens = [
         icon: 'ion-ios-stats',
         label: 'Investments',
         comp: Investments
+    },
+    {
+        key: 'investments',
+        icon: 'ion-ios-stats',
+        label: 'Info',
+        comp: Info
     }
 ]
 
