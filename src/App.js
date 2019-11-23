@@ -18,7 +18,7 @@ import { compose } from 'ramda'
 import Typography from 'typography'
 import Overview from 'src/domain/invoice/components/Overview'
 import Transactions from 'src/domain/invoice/components/Transactions'
-import Statistics from 'src/domain/stats/components/Statistics'
+import Investments from 'src/domain/stats/components/Investments'
 
 const typography = new Typography({
     baseFontSize: '18px',
@@ -56,11 +56,11 @@ const screens = [
         comp: Transactions
     },
     {
-        key: 'statistics',
+        key: 'investments',
         icon: 'ion-ios-stats',
-        label: 'Stats',
-        comp: Statistics
-    },
+        label: 'Investments',
+        comp: Investments
+    }
 ]
 
 class Tabs extends React.Component {
