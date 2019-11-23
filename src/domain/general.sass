@@ -1,0 +1,54 @@
+@import "invoice/components/palette"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i')
+@import "invoice/components/palette"
+
+$page-bg: #ecebec
+$family: 'Open Sans'
+$family: 'Roboto'
+$font: gray
+$shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07)
+
+#app
+  ons-button
+    background-color: $color-primary-0 !important
+    color: white
+  ons-back-button
+    color: $color-primary-0
+    svg
+      fill: $color-primary-0
+
+#app
+  ons-page
+    ons-toolbar
+      //background: $color-primary-0
+      .toolbar__center
+        //color: white !important
+    *
+      //color: $font
+      font-family: $family !important
+  .page__content
+    background: $page-bg !important
+  .tabbar.ons-tabbar__footer
+    background: white
+    //border-top: 1px solid gray
+    box-shadow: 0px -0px 6px 0px rgba(0, 0, 0, 0.15)
+    .tabbar__item
+      button
+        color: $font
+      &.active
+        button
+          color: $color-primary-0
+
+.kard
+  background: white
+  border-radius: 4px
+  box-shadow: $shadow
+  margin: 10px
+  padding: 10px
+  .body
+    > *:not(:last-child)
+      margin-bottom: 10px
+  &:active
+    background: rgba(255, 255, 255, 0.5)
+

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+html {
+    display: flex;
+    min-height: 100vh;
+}
+
+body, #app {
+    display: flex;
+    background: #ebebeb;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 1.00rem;
+    font-family: 'Yantramanav', sans-serif;
+
+}
+
+

@@ -1,0 +1,134 @@
+@import "../../general"
+
+.page.invoice
+  .spinner
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+  .wrapper
+    position: relative
+    .action-btn
+      bottom: 10px
+      right: 20px
+      position: absolute
+      width: 70px
+      height: 30px
+      display: flex
+      justify-content: center
+      align-items: center
+      ons-icon
+        margin-right: 5px
+      &.hidden
+        visibility: hidden
+  .action
+    display: flex
+    flex-direction: column
+    height: 80px
+    .header
+      ons-icon
+        margin-right: 10px
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+      font-weight: bold
+      color: $color-primary-0
+      .more
+        margin-right: auto
+    .top
+      justify-content: space-between
+      display: flex
+      flex-direction: row
+      font-weight: bold
+      font-size: 18px
+      &.overdue
+      //background: #ffd8c7
+      .amount
+        font-size: 18px
+    .bottom
+      height: 30px
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      .to
+      //color: $color-primary-0
+      .date
+        font-size: 14px
+
+      .attr
+        display: flex
+        .name
+          font-weight: bold
+          width: 70px
+  .user-input
+    position: absolute
+    bottom: 15px
+    left: 0
+    width: 100%
+    flex-grow: 1
+    display: flex
+  //padding: 20px
+  .confirmation
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    font-weight: bold
+    .buttons
+      > *:active
+        transition: 200ms ease all
+        color: rgba(255, 255, 255, 0.4)
+      color: $color-primary-0
+      font-size: 18px
+      display: flex
+      justify-content: space-between
+      width: 100px
+      margin-top: 10px
+  .pair-actions
+    height: 50px
+    input
+      display: none
+    ons-icon
+      font-size: 38px
+      &:active
+        transition: 200ms ease all
+        color: rgba(255, 255, 255, 0.4)
+      color: gray
+    align-items: center
+    justify-content: space-around
+
+#app
+  .payment-detail
+    ons-toolbar
+      .center
+        color: $color-primary-0
+        display: flex
+        align-items: center
+        justify-content: center
+        ons-icon
+          margin-right: 10px
+    .page__content
+      padding: 10px
+      background: white !important
+
+  .amount
+    div:nth-child(2)
+      text-align: right
+  .attr
+    margin-bottom: 25px
+    div
+      font-size: 18px
+      font-weight: bold
+    div:first-child
+      font-size: 14px
+  ons-button
+    display: flex
+    justify-content: center
+    align-items: center
+    ons-icon
+      margin-right: 10px
+  .doc
+    margin-bottom: 20px
+
+
