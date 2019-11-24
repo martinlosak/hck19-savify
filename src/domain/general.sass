@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i')
 @import "invoice/components/palette"
 
-$page-bg: #ecebec
+$page-bg: white
 $family: 'Open Sans'
 $family: 'Roboto'
 $font: gray
@@ -22,6 +22,7 @@ $shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07)
   ons-page
     ons-toolbar
       //background: $color-primary-0
+      border-bottom: 1px solid #f7f7f7
       .toolbar__center
         //color: white !important
     *
@@ -51,4 +52,7 @@ $shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07)
       margin-bottom: 10px
   &:active
     background: rgba(255, 255, 255, 0.5)
+
+ons-toolbar
+ background: white !important
 
