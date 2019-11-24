@@ -1,5 +1,5 @@
 import React from 'react'
-import {Page} from 'react-onsenui'
+import {Button, Icon, Page} from 'react-onsenui'
 import {compose} from 'ramda'
 import './info-style.sass'
 
@@ -57,6 +57,14 @@ const Info = ({renderToolbar}) =>
 
         <h4>How to buy invest in investment plan?</h4>
         <p>We will guide you through the process. Just contact us.</p>
+
+        <Button>
+            Contact bank advisor
+        </Button>
+
+        <Button>
+            Open deposit
+        </Button>
 
     </Page>
 

@@ -31,7 +31,7 @@ const Investments = ({renderToolbar, setIndex, index, setAccount, accountIndex})
         {accountIndex === "1" &&
         <Segment id="investments" onPostChange={e => setIndex(e.index)}>
             <button>Current saving</button>
-            <button>Alternative ETH</button>
+            <button>Alternative ETF</button>
         </Segment>}
         {accountIndex === "1" && <Comp/>}
     </Page>
