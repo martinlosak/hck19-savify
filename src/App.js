@@ -2,7 +2,6 @@ import React from 'react'
 
 import {Page, Tab, Tabbar, Toolbar} from 'react-onsenui'
 import {CSSTransition, TransitionGroup} from 'react-transition-group'
-import Transactions from 'src/domain/invoice/components/Transactions'
 import Investments from 'src/domain/stats/components/Investments'
 import Accounts from './domain/invoice/components/Accounts'
 import Info from './domain/invoice/components/Info'
@@ -13,12 +12,6 @@ const screens = [
         icon: 'ion-ios-card',
         label: 'Accounts',
         comp: Accounts
-    },
-    {
-        key: 'transactions',
-        icon: 'ion-logo-usd',
-        label: 'Transactions',
-        comp: Transactions
     },
     {
         key: 'investments',
@@ -66,7 +59,7 @@ class Tabs extends React.Component {
                       icon={s.icon}/>
         }))
 
-    render () {
+    render() {
         return (
             <Page>
                 <Tabbar
