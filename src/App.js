@@ -20,9 +20,10 @@ const screens = [
         comp: Investments
     },
     {
-        key: 'investments',
-        icon: 'ion-ios-stats',
-        label: 'Info',
+        key: 'savify',
+        // icon: 'ion-ios-information-circle',
+        icon: 'ion-ios-trending-up',
+        label: 'Savify',
         comp: Info
     }
 ]
