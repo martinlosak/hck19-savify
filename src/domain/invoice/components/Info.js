@@ -7,7 +7,7 @@ const Info = ({renderToolbar}) =>
     <Page
         className={'overview'}
         renderToolbar={renderToolbar({
-            title: 'Accounts'
+            title: 'ETF'
         })}>
 
         <h4>What is an ETF?</h4>
@@ -16,16 +16,16 @@ const Info = ({renderToolbar}) =>
             like the NASDAQ. In the core ETFs compare the advantages of Stocks and shares in one product.
         </p>
         <iframe
-            width="360"
-            height="200"
+            width="270"
+            height="145"
             src="https://www.youtube.com/embed/A62WuFcR5Cw" frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>
 
         <h4>How does the stock exchange work?</h4>
         <iframe
-            width="360"
-            height="200"
+            width="270"
+            height="145"
             src="https://www.youtube.com/embed/NpZpAK04sx0" frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>
@@ -39,8 +39,8 @@ const Info = ({renderToolbar}) =>
 
         <h4>How to start with investing in ETFs?</h4>
         <iframe
-            width="360"
-            height="200"
+            width="270"
+            height="145"
             src="https://www.youtube.com/embed/kytT1lBB0t8" frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>
@@ -48,8 +48,8 @@ const Info = ({renderToolbar}) =>
         <h4>Why it is useful to invest with an investment plan?</h4>
 
         <iframe
-            width="360"
-            height="200"
+            width="270"
+            height="145"
             src="https://www.youtube.com/embed/NpZpAK04sx0" frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>

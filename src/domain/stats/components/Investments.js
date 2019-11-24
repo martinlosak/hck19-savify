@@ -22,7 +22,7 @@ const Investments = ({renderToolbar, setIndex, index, setAccount, accountIndex})
     return <Page renderToolbar={renderToolbar({
         title: 'Investments'
     })}>
-        <div className="row">
+        <div className="row top-label">
             Please choose your banking account.
         </div>
 

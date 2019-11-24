@@ -23,7 +23,7 @@ const screens = [
         key: 'savify',
         // icon: 'ion-ios-information-circle',
         icon: 'ion-ios-trending-up',
-        label: 'Savify',
+        label: 'ETF',
         comp: Info
     }
 ]
