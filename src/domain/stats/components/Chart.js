@@ -1,5 +1,5 @@
 import React from 'react'
-import {Area, ComposedChart, Line, ResponsiveContainer, XAxis, YAxis} from 'recharts'
+import {Area, ComposedChart, Legend, Line, ResponsiveContainer, XAxis, YAxis} from 'recharts'
 
 let data = [
     {saving: 2000, real: 2000, etf: 2000, month: '11/18'},
@@ -37,12 +37,13 @@ const Chart = ({withInvestments = false}) =>
             <XAxis dataKey="month"/>
             <YAxis dataKey="etf" width={25} domain={[1500, 2500]}/>
 
-            <Area type="monotone" dataKey='saving' stroke={savingColor} fill="url(#colorSaving)" fillOpacity={0.2}/>
+            <Area name='Real value' type="monotone" dataKey='saving' stroke={savingColor} fill="url(#colorSaving)" fillOpacity={0.2}/>
 
             {withInvestments &&
-            <Area type='monotone' dataKey='etf' stroke={etfColor} fill="url(#colorEtf)" fillOpacity={0.2}/>}
+            <Area name='Possible value' type='monotone' dataKey='etf' stroke={etfColor} fill="url(#colorEtf)" fillOpacity={0.2}/>}
 
-            <Line type="monotone" dataKey="real" stroke={realColor} strokeDasharray="5 5" dot={false}/>
+            <Line name='Saving amount' type="monotone" dataKey="real" stroke={realColor} strokeDasharray="5 5" dot={false}/>
+            <Legend />
         </ComposedChart>
     </ResponsiveContainer>
 
