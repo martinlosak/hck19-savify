@@ -9,16 +9,19 @@
 #mockup {
   box-sizing: border-box;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 350px;
   height: 705px;
-  padding: 78px 20px 80px 20px;
+  padding: 46px 24px 34px 27px;
   vertical-align: middle;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .mockup-ios {
-  background-image: url('mockups/iphone6plus_350x705.png');
+  background-image: url('mockups/iphone_x.png');
 }
+
+
 
 .mockup-android {
   background-image: url('mockups/nexus4_350x705.png');
@@ -30,6 +33,7 @@
   border: 0;
   opacity: 0;
   transition: 0.9s ease-in-out opacity;
+  border-radius: 28px;
 }
 
 #mockup iframe.loaded {

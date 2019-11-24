@@ -10,11 +10,7 @@
 <body>
 
   <div id="wrapper">
-    <!-- Styler tabbar -->
-    <div id="styler">
-      <label class="styler-ios">iOS Style</label>
-      <label class="styler-android">MD Style</label>
-    </div>
+
 
     <!-- App -->
     <div id="mockup">
@@ -64,7 +60,7 @@
     }
     // Add mockup
     document.querySelector('#mockup').classList.add('mockup-' + defaultPlatform);
-    document.querySelector('.styler-' + defaultPlatform).classList.add('selected');
+    // document.querySelector('.styler-' + defaultPlatform).classList.add('selected');
 
     // Hide scrollbar
     var style = document.createElement('style');
@@ -86,10 +82,10 @@
           window.frames[0]._superSecretOns.forcePlatformStyling(platform);
         }
 
-        Object.keys(styler).forEach(function(p) {
-          styler[p].classList.toggle('selected');
-          document.querySelector('#mockup').classList.toggle('mockup-' + p);
-        });
+        // Object.keys(styler).forEach(function(p) {
+        //   styler[p].classList.toggle('selected');
+        //   document.querySelector('#mockup').classList.toggle('mockup-' + p);
+        // });
       }
     };
 
@@ -102,8 +98,8 @@
 
       var placeholder = document.querySelector('#placeholder');
       if (placeholder) {
-        styler.ios.onclick = onClick.bind(null, 'ios');
-        styler.android.onclick = onClick.bind(null, 'android');
+        // styler.ios.onclick = onClick.bind(null, 'ios');
+        // styler.android.onclick = onClick.bind(null, 'android');
         placeholder.remove();
         document.querySelector('#app-iframe').classList.add('loaded');
       }
